@@ -4,7 +4,7 @@
   "description": "A landing page built with Tailwind CSS to show the beauty of my region Ancash.",
   "main": "index.js",
   "scripts": {
-    "start": "",
+    "start": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
     "test": ""
   },
   "repository": {
