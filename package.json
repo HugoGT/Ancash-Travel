@@ -1,0 +1,26 @@
+{
+  "name": "ancash-travel",
+  "version": "1.0.0",
+  "description": "A landing page built with Tailwind CSS to show the beauty of my region Ancash.",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HugoGT/Ancash-Travel.git"
+  },
+  "keywords": [],
+  "author": "Hugo Gómez Tinoco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HugoGT/Ancash-Travel/issues"
+  },
+  "homepage": "https://github.com/HugoGT/Ancash-Travel#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
+  }
+}
