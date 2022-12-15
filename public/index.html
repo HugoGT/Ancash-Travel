@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/tailwind.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <title>Ancash Travel</title>
-</head>
-<body>
-  <p class="font-Montserrat">Montserrat</p>
-  <div class="w-20 h-20 bg-primary"></div>
-  <div class="w-20 h-20 bg-terciary"></div>
-  <div class="w-20 h-20 bg-secondary"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ancash Travel</title>
+  </head>
+
+  <body>
+    <nav></nav>
+    <div id="tab_bar"></div>
+    <main class="h-screen w-full">
+      <div id="home">
+        <div class="relative h-3/4 w-full">
+          <div
+            class="absolute flex h-full w-full flex-col items-center space-y-80 py-4"
+          >
+            <input
+              class="rounded-full p-3 px-6 shadow-sm outline-none"
+              type="search"
+              name=""
+              placeholder="San Francisco"
+              id=""
+            />
+            <button
+              class="text-l w-36 rounded-full bg-white p-2 font-semibold text-primary shadow-sm"
+            >
+              Explorar
+            </button>
+          </div>
+          <div class="h-full w-full">
+            <img src="./img/landscape.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="recomended"></div>
+      <div id="featured"></div>
+    </main>
+    <footer></footer>
+  </body>
 </html>

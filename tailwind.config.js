@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./public/index.html",
@@ -8,13 +9,10 @@ module.exports = {
     fontFamily: {
       Montserrat: ["Montserrat", "sans-serif"],
     },
-    colors: {
-      'primary':"#CC2D4A",
-      'secondary':"#8FA206",
-      'tertiary':"#61AEC9",
-    },
     extend: {
       backgroundImage: {
+        'landscape': "url('./public/img/landscape.jpg')",
+        'hotels': "url('./public/img/hotels.jpg')"
       },
       backgroundColor: theme => ({
         ...theme('colors'),
