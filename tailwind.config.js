@@ -11,8 +11,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'landscape': "url('./public/img/landscape.jpg')",
-        'hotels': "url('./public/img/hotels.jpg')"
+        'landscape': "url('../img/landscape.jpg')",
+        'hotels': "url('../img/hotels.jpg')"
       },
       backgroundColor: theme => ({
         ...theme('colors'),
