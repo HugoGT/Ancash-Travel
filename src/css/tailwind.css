@@ -2,13 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+.Title {
+  @apply my-2 text-2xl font-semibold text-primary;
+}
+
 .Card {
-  @apply h-64 w-48 rounded-lg shadow-md flex-none transform transition hover:-translate-y-4 hover:shadow-xl
+  @apply h-64 w-48 flex-none transform rounded-lg shadow-md transition hover:-translate-y-4 hover:shadow-xl;
+}
+.Card-title {
+  @apply px-8 pt-8 pb-2 text-2xl font-semibold text-white;
+}
+.Card-description {
+  @apply pl-8 text-black text-opacity-80;
+}
+
+.Question {
+  @apply text-xl font-medium text-primary pt-4
+}
+.Response {
+  @apply pt-1
 }
 
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
