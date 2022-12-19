@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 .Card {
-  @apply h-64 w-48 rounded-lg shadow-md
+  @apply h-64 w-48 rounded-lg shadow-md flex-none
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
