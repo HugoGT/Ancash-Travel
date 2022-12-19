@@ -27,5 +27,8 @@ module.exports = {
       }
     },
   },
+  variants: {
+    width: ["responsive",],
+  },
   plugins: [],
 };
