@@ -16,7 +16,6 @@
 
   <body class="font-Montserrat">
     <nav></nav>
-    <div id="tab_bar"></div>
     <main class="h-auto w-full">
       <div id="home">
         <div class="relative h-3/4 w-full">
@@ -123,12 +122,19 @@
         </div>
       </div>
     </main>
-    <footer class="h-auto w-full space-y-2 bg-gray-100 p-6 text-gray-500">
+    <footer class="h-auto w-full space-y-2 bg-gray-100 p-6 text-gray-500 shadow-md mb-16">
       <p class="text-lg">Acerca De</p>
       <p class="text-sm">Nosotros</p>
       <p class="text-sm">Empleos</p>
       <p class="text-sm">Inversionistas</p>
       <p class="text-sm">Términos y Condiciones</p>
     </footer>
+    <div id="tab_bar" class="w-full h-16 bg-white p-5 fixed bottom-0 left-0 flex justify-around">
+      <a href="#" class="h-6"><img class="SVG" src="./svg/profile.svg" alt="Perfil"></a>
+      <a href="#home" class="h-6"><img class="SVG" src="./svg/home.svg" alt="Home"></a>
+      <a href="#recomended" class="h-6"><img class="SVG" src="./svg/like.svg" alt="Recomendados"></a>
+      <a href="#routes" class="h-6"><img class="SVG" src="./svg/search.svg" alt="Rutas"></a>
+      <a href="#" class="h-6"><img class="SVG" src="./svg/moon.svg" alt="Dark mode"></a>
+    </div>
   </body>
 </html>
