@@ -7,30 +7,19 @@
 }
 
 .Card {
-  @apply h-64 w-48 flex-none transform rounded-lg shadow-md transition hover:-translate-y-4 hover:shadow-xl;
+  @apply inline-block h-64 w-48 flex-none transform rounded-lg shadow-md transition hover:-translate-y-4 hover:shadow-xl;
 }
 .Card-title {
-  @apply px-8 pt-8 pb-2 text-2xl font-semibold text-white;
+  @apply px-8 pt-8 pb-2 text-2xl font-semibold;
 }
 .Card-description {
-  @apply pl-8 text-black text-opacity-80;
+  @apply pl-8 text-opacity-80;
 }
 
 .Question {
-  @apply text-xl font-medium text-primary pt-4
-}
-.Response {
-  @apply pt-1
+  @apply pt-4 text-xl font-medium text-primary;
 }
 
 .SVG {
-  @apply w-6 h-6
-}
-
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+  @apply h-6 w-6;
 }

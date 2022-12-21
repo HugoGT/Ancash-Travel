@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="" lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,9 +14,9 @@
     <title>Ancash Travel</title>
   </head>
 
-  <body class="font-Montserrat">
+  <body class="bg-gray-50 font-Montserrat dark:bg-gray-800">
     <nav
-      class="fixed top-0 right-0 z-20 hidden h-16 w-full justify-between bg-white p-5 px-10 md:flex"
+      class="fixed top-0 left-0 z-20 hidden h-16 w-full justify-between bg-white p-5 px-10 dark:bg-gray-900 md:flex"
       id="nav_bar"
     >
       <p class="text-2xl font-black leading-6 text-primary">Ancash travel</p>
@@ -26,27 +26,31 @@
         <a class="align-middle font-bold text-primary" href="#recomended"
           >Recomendadas</a
         >
-        <a class="align-middle font-bold text-primary hidden lg:inline" href="#faqs"
+        <a
+          class="hidden align-middle font-bold text-primary lg:inline"
+          href="#faqs"
           >Preguntas</a
         >
-        <a class="align-middle font-bold text-primary hidden lg:inline" href="#about"
+        <a
+          class="hidden align-middle font-bold text-primary lg:inline"
+          href="#about"
           >Acerca De</a
         >
       </div>
       <div class="flex space-x-6">
-        <a href="#" class="h-6"
-          ><img class="SVG" src="./svg/moon.svg" alt="Dark mode"
-        /></a>
-        <a href="#" class="h-6"
-          ><img class="SVG" src="./svg/profile.svg" alt="Perfil"
-        /></a>
+        <button class="toggle-dark h-6">
+          <img class="SVG" src="./svg/moon.svg" alt="Dark mode" />
+        </button>
+        <a href="#" class="h-6">
+          <img class="SVG" src="./svg/profile.svg" alt="Perfil" />
+        </a>
       </div>
     </nav>
     <main class="h-auto w-full md:mt-16">
       <div id="home">
         <div class="relative h-3/4 w-full">
           <div
-            class="absolute flex h-full w-full flex-col items-center space-y-80 py-4 md:ml-20 md:items-start md:justify-start md:space-y-0 md:pt-80"
+            class="absolute flex h-full w-full flex-col items-center space-y-80 py-4 md:ml-16 md:max-w-2xl md:items-start md:justify-start md:space-y-0 md:pt-80"
           >
             <input
               class="w-48 rounded-full p-3 px-6 shadow-sm outline-none transition duration-1000 ease-in-out focus-within:shadow-sm focus:w-8/12 focus:ring-2 md:hidden"
@@ -55,7 +59,7 @@
               placeholder="San Francisco"
               id=""
             />
-            <div class="hidden h-auto md:flex md:w-2/5 md:pb-6">
+            <div class="hidden h-auto md:flex md:w-4/6 md:pb-6 md:pt-12">
               <p class="text-3xl font-bold">
                 Encuentra más ubicaciones como esta
               </p>
@@ -67,36 +71,111 @@
             </button>
           </div>
           <div
-            class="h-full w-full md:h-[36rem] md:bg-landscape md:bg-cover md:bg-center"
+            class="h-full md:h-[36rem] md:bg-landscape md:bg-cover md:bg-center"
           >
             <img class="md:hidden" src="./img/landscape.jpg" alt="" />
           </div>
         </div>
       </div>
-      <div id="routes" class="p-6">
+      <div id="routes" class="w-full p-6">
         <p class="Title">Rutas</p>
         <div
-          class="scrollbar-hide flex h-72 w-auto items-center space-x-4 overflow-x-auto overscroll-x-contain"
+          class="flex h-72 w-auto items-center space-x-4 overflow-x-auto overscroll-x-contain scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-gray-600 dark:scrollbar-track-gray-600 dark:scrollbar-thumb-gray-400"
         >
           <div class="Card">
             <div class="h-3/5 w-full rounded-t-lg bg-landscape bg-cover"></div>
-            <div class="h-2/5 w-full rounded-b-lg bg-secondary p-3">
-              <p class="text-l font-bold text-white">Norway</p>
-              <p class="text-white">Paisajes increíbles</p>
+            <div class="h-2/5 w-full rounded-b-lg bg-secondary p-3 text-white">
+              <p class="text-l font-bold">Norway</p>
+              <p>Paisajes increíbles</p>
             </div>
           </div>
           <div class="Card">
             <div class="h-3/5 w-full rounded-t-lg bg-landscape bg-cover"></div>
-            <div class="h-2/5 w-full rounded-b-lg bg-white p-3">
-              <p class="text-l font-bold text-terciary">Norway</p>
-              <p class="text-terciary">Paisajes increíbles</p>
+            <div
+              class="h-2/5 w-full rounded-b-lg bg-white p-3 text-terciary dark:bg-terciary dark:text-white"
+            >
+              <p class="text-l font-bold">Norway</p>
+              <p>Paisajes increíbles</p>
             </div>
           </div>
           <div class="Card">
             <div class="h-3/5 w-full rounded-t-lg bg-landscape bg-cover"></div>
-            <div class="h-2/5 w-full rounded-b-lg bg-secondary p-3">
-              <p class="text-l font-bold text-white">Norway</p>
-              <p class="text-white">Paisajes increíbles</p>
+            <div class="h-2/5 w-full rounded-b-lg bg-secondary p-3 text-white">
+              <p class="text-l font-bold">Norway</p>
+              <p>Paisajes increíbles</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="h-3/5 w-full rounded-t-lg bg-landscape bg-cover"></div>
+            <div
+              class="h-2/5 w-full rounded-b-lg bg-white p-3 text-terciary dark:bg-terciary dark:text-white"
+            >
+              <p class="text-l font-bold">Norway</p>
+              <p>Paisajes increíbles</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="h-3/5 w-full rounded-t-lg bg-landscape bg-cover"></div>
+            <div class="h-2/5 w-full rounded-b-lg bg-secondary p-3 text-white">
+              <p class="text-l font-bold">Norway</p>
+              <p>Paisajes increíbles</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="h-3/5 w-full rounded-t-lg bg-landscape bg-cover"></div>
+            <div
+              class="h-2/5 w-full rounded-b-lg bg-white p-3 text-terciary dark:bg-terciary dark:text-white"
+            >
+              <p class="text-l font-bold">Norway</p>
+              <p>Paisajes increíbles</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="h-3/5 w-full rounded-t-lg bg-landscape bg-cover"></div>
+            <div class="h-2/5 w-full rounded-b-lg bg-secondary p-3 text-white">
+              <p class="text-l font-bold">Norway</p>
+              <p>Paisajes increíbles</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="h-3/5 w-full rounded-t-lg bg-landscape bg-cover"></div>
+            <div
+              class="h-2/5 w-full rounded-b-lg bg-white p-3 text-terciary dark:bg-terciary dark:text-white"
+            >
+              <p class="text-l font-bold">Norway</p>
+              <p>Paisajes increíbles</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="h-3/5 w-full rounded-t-lg bg-landscape bg-cover"></div>
+            <div class="h-2/5 w-full rounded-b-lg bg-secondary p-3 text-white">
+              <p class="text-l font-bold">Norway</p>
+              <p>Paisajes increíbles</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="h-3/5 w-full rounded-t-lg bg-landscape bg-cover"></div>
+            <div
+              class="h-2/5 w-full rounded-b-lg bg-white p-3 text-terciary dark:bg-terciary dark:text-white"
+            >
+              <p class="text-l font-bold">Norway</p>
+              <p>Paisajes increíbles</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="h-3/5 w-full rounded-t-lg bg-landscape bg-cover"></div>
+            <div class="h-2/5 w-full rounded-b-lg bg-secondary p-3 text-white">
+              <p class="text-l font-bold">Norway</p>
+              <p>Paisajes increíbles</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="h-3/5 w-full rounded-t-lg bg-landscape bg-cover"></div>
+            <div
+              class="h-2/5 w-full rounded-b-lg bg-white p-3 text-terciary dark:bg-terciary dark:text-white"
+            >
+              <p class="text-l font-bold">Norway</p>
+              <p>Paisajes increíbles</p>
             </div>
           </div>
         </div>
@@ -144,29 +223,29 @@
           </div>
         </div>
       </div>
-      <div id="faqs" class="h-auto w-full p-6">
+      <div id="faqs" class="h-auto w-full p-6 dark:text-white">
         <p class="Title">Preguntas Frecuentes</p>
         <div class="h-auto w-full">
           <p class="Question">Métodos de pago</p>
-          <p class="Response">
+          <p class="pt-1">
             Aceptamos distintos métodos de pago: VISA, MasterCard, American
             Express, Paypal y Binance
           </p>
           <p class="Question">Política de Cancelación</p>
-          <p class="Response">
+          <p class="pt-1">
             Para estancias menores a una semana es importante avisar con 3 días
             de anticipación, de caso contario será sancionado.
           </p>
           <p class="Question">Mascotas</p>
-          <p class="Response">
+          <p class="pt-1">
             El tema de las mascotas dependerá directamente del anfitrión.
           </p>
           <p class="Question">Información de Seguridad</p>
-          <p class="Response">
+          <p class="pt-1">
             Todas nuestras estancias cuentan con seguro en caso de accidentes
           </p>
           <p class="Question">Estancias Largas</p>
-          <p class="Response">
+          <p class="pt-1">
             Contamos con estancias de hasta 3 meses, en este caso es requerido
             un anticipo con un monto del 50% del valor de la renta
           </p>
@@ -174,7 +253,7 @@
       </div>
     </main>
     <footer
-      class="mb-16 h-auto w-full space-y-2 bg-gray-100 p-6 text-gray-500 shadow-md md:mb-0"
+      class="mb-16 h-auto w-full space-y-2 bg-gray-100 p-6 text-gray-500 shadow-md dark:bg-gray-900 md:mb-0"
       id="about"
     >
       <p class="text-lg">Acerca De</p>
@@ -185,7 +264,7 @@
     </footer>
     <div
       id="tab_bar"
-      class="fixed bottom-0 left-0 flex h-16 w-full justify-around bg-white p-5 md:hidden"
+      class="fixed bottom-0 flex h-16 w-full justify-around bg-white p-5 dark:bg-gray-900 md:hidden"
     >
       <a href="#" class="h-6"
         ><img class="SVG" src="./svg/profile.svg" alt="Perfil"
@@ -199,9 +278,21 @@
       <a href="#routes" class="h-6"
         ><img class="SVG" src="./svg/search.svg" alt="Rutas"
       /></a>
-      <a href="#" class="h-6"
-        ><img class="SVG" src="./svg/moon.svg" alt="Dark mode"
-      /></a>
+      <button class="toggle-dark h-6">
+        <img class="SVG" src="./svg/moon.svg" alt="Dark mode" />
+      </button>
     </div>
+    <script>
+      const dark = document.querySelectorAll(".toggle-dark");
+      const htm = document.querySelector("html");
+
+      dark.forEach(function (obj) {
+        obj.addEventListener("click", toggleDarkMode);
+      });
+
+      function toggleDarkMode() {
+        htm.classList.toggle("dark");
+      }
+    </script>
   </body>
 </html>
