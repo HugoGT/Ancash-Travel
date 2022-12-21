@@ -15,8 +15,34 @@
   </head>
 
   <body class="font-Montserrat">
-    <nav class="" id="nav_bar"></nav>
-    <main class="h-auto w-full">
+    <nav
+      class="fixed top-0 right-0 z-20 hidden h-16 w-full justify-between bg-white p-5 px-10 md:flex"
+      id="nav_bar"
+    >
+      <p class="text-2xl font-black leading-6 text-primary">Ancash travel</p>
+      <div class="space-x-4">
+        <a class="align-middle font-bold text-primary" href="#home">Inicio</a>
+        <a class="align-middle font-bold text-primary" href="#routes">Rutas</a>
+        <a class="align-middle font-bold text-primary" href="#recomended"
+          >Recomendadas</a
+        >
+        <a class="align-middle font-bold text-primary hidden lg:inline" href="#faqs"
+          >Preguntas</a
+        >
+        <a class="align-middle font-bold text-primary hidden lg:inline" href="#about"
+          >Acerca De</a
+        >
+      </div>
+      <div class="flex space-x-6">
+        <a href="#" class="h-6"
+          ><img class="SVG" src="./svg/moon.svg" alt="Dark mode"
+        /></a>
+        <a href="#" class="h-6"
+          ><img class="SVG" src="./svg/profile.svg" alt="Perfil"
+        /></a>
+      </div>
+    </nav>
+    <main class="h-auto w-full md:mt-16">
       <div id="home">
         <div class="relative h-3/4 w-full">
           <div
@@ -47,8 +73,8 @@
           </div>
         </div>
       </div>
-      <div id="recomended" class="p-6">
-        <p class="Title">Recomendados</p>
+      <div id="routes" class="p-6">
+        <p class="Title">Rutas</p>
         <div
           class="scrollbar-hide flex h-72 w-auto items-center space-x-4 overflow-x-auto overscroll-x-contain"
         >
@@ -75,7 +101,7 @@
           </div>
         </div>
       </div>
-      <div id="routes" class="px-6">
+      <div id="recomended" class="px-6">
         <p class="Title">Rutas recomendadas</p>
         <div
           class="mt-6 flex h-full w-full flex-col items-center justify-center space-y-4"
@@ -149,6 +175,7 @@
     </main>
     <footer
       class="mb-16 h-auto w-full space-y-2 bg-gray-100 p-6 text-gray-500 shadow-md md:mb-0"
+      id="about"
     >
       <p class="text-lg">Acerca De</p>
       <p class="text-sm">Nosotros</p>

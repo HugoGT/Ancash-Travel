@@ -16,12 +16,12 @@ module.exports = {
       },
       backgroundColor: theme => ({
         ...theme('colors'),
-        'primary': '#CC2D4A',
+        'primary': '#CC2D4B',
         'secondary': '#8FA206',
         'terciary': '#61AEC9'
       }),
       textColor: {
-        'primary': '#CC2D4A',
+        'primary': '#CC2D4B',
         'secondary': '#8FA206',
         'terciary': '#61AEC9'
       }
