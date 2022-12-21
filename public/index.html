@@ -282,17 +282,18 @@
         <img class="SVG" src="./svg/moon.svg" alt="Dark mode" />
       </button>
     </div>
-    <script>
-      const dark = document.querySelectorAll(".toggle-dark");
-      const htm = document.querySelector("html");
-
-      dark.forEach(function (obj) {
-        obj.addEventListener("click", toggleDarkMode);
-      });
-
-      function toggleDarkMode() {
-        htm.classList.toggle("dark");
-      }
-    </script>
   </body>
+
+  <script>
+    const dark = document.querySelectorAll(".toggle-dark");
+    const htm = document.querySelector("html");
+
+    dark.forEach(function (obj) {
+      obj.addEventListener("click", toggleDarkMode);
+    });
+
+    function toggleDarkMode() {
+      htm.classList.toggle("dark");
+    }
+  </script>
 </html>
